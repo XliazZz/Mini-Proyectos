@@ -5,5 +5,12 @@
     "description": "Libreria Personal: Organiza tus lecturas fácilmente. Agrega libros a tu lista de lectura, filtra por géneros y guarda tu lista de manera segura en LocalStorage. 📚✨",
     "path": "library",
     "id": 1
+  },
+  {
+    "name": "Grids",
+    "Image": "https://res.cloudinary.com/do5ubt5g0/image/upload/v1705624334/Captura_desde_2024-01-18_21-31-29_ngalbp.png",
+    "description": "Grids: Crea un grid de 16x16, elige un color y pinta los cuadros que quieras. 🎨",
+    "path": "grids",
+    "id": 2
   }
 ]
