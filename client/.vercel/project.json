@@ -1,7 +1,0 @@
-{
-  "orgId": "Q2oZwA2A6rrg2TBK4cLbmMMA",
-  "projectId": "prj_wDL0xU5CjwTkG07OsGwacNusl3Z2",
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
-  ]
-}
