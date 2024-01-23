@@ -46,7 +46,7 @@ export const bazarSlice = createSlice({
       })
       .addCase(fetchById.fulfilled, (state, action) => {
         state.status = "succeeded";
-        state.productDetails = action.payload;
+        state.productDetails = action.payload || [];
       })
       .addCase(fetchById.rejected, (state, action) => {
         state.status = "failed";
