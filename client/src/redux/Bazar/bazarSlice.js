@@ -1,7 +1,7 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
-const URL = "http://localhost:3000";
+const URL = "mini-proyectos-back-production.up.railway.app";
 
 export const fetchSearchs = createAsyncThunk('products/fetchProducts', async ( name ) => {
   const response = await axios.get(`${URL}/bazar/items?name=${name}`); 
