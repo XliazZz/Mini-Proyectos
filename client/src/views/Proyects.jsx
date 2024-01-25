@@ -3,12 +3,9 @@ import data from "../utils/db.json";
 
 const Proyects = () => {
   return (
-    <div>
-      <div className="text-center mt-10">
-        <h1 className="text-3xl font-extrabold">MiniProyectos</h1>
-      </div>
+    <div className="bg-gradient-to-br from-blue-400 to-indigo-900 min-h-screen overflow-auto pb-10">
       <div
-        className="grid grid-cols-2 gap-0 m-0 p-10"
+        className="grid grid-cols-2 gap-2 m-0 p-10 gap-y-10 z-50"
       >
         {data.map((proyect) => (
           <Card
@@ -19,9 +16,7 @@ const Proyects = () => {
             path={proyect.path}
             id={proyect.id}
           />
-        ))
-
-        }
+        ))}
       </div>
     </div>
   )

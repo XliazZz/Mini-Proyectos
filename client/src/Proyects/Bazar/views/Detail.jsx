@@ -26,9 +26,9 @@ const Detail = () => {
   }
 
   return (
-    <div className="justify-center">
+    <div className="justify-center bg-gray-800 sm:h-screen h-screen">
 
-      <div className="my-1 sm:my-10 sm:mt-3">
+      <div className="my-1 sm:py-10 sm:pt-3">
         <SearchBar />
       </div>
 

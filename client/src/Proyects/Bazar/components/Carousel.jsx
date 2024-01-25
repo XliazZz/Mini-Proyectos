@@ -22,7 +22,7 @@ const Carousel = ({ images }) => {
 
       {/* <!--Carousel indicators--> */}
       <div
-        className="absolute bottom-0 left-0 right-0 z-[2] mx-[15%] mb-4 flex list-none justify-center p-0"
+        className="absolute bottom-0 sm:top-[515px] left-0 right-0 z-[2] mx-[15%] mb-4 flex list-none justify-center p-0"
         data-te-carousel-indicators
       >
         {images.map((_,index) => (
@@ -44,7 +44,7 @@ const Carousel = ({ images }) => {
         {images.map((img, index) => (
           <motion.div
             key={index}
-            className={`relative float-left -mr-[100%] w-full h-52 transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none ${index === currentImage ? 'opacity-100' : 'opacity-0'}`}
+            className={`sm:h-[450px] relative float-left -mr-[100%] w-full h-52 transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none ${index === currentImage ? 'opacity-100' : 'opacity-0'}`}
             data-te-carousel-item
             data-te-carousel-active
             initial={{ opacity: 0 }}

@@ -8,7 +8,7 @@ const Bazar = () => {
   },[]);
 
   return (
-    <div>
+    <div className='bg-gray-950'>
       <Landing />
     </div>
   )

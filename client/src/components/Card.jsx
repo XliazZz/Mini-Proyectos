@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 const Card = ({ image, description, name, path }) => {
   return (
-    <NavLink to={`/${path}`} className="block max-w-[600px] mx-auto">
+    <NavLink to={`/proyects/${path}`} className="block max-w-[600px] mx-auto">
       <div className="overflow-hidden aspect-video bg-transparent cursor-pointer rounded-xl relative group">
 
         <div className="rounded-xl z-50 opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out cursor-pointer absolute from-black/100 to-transparent bg-gradient-to-t inset-x-0 -bottom-2 pt-30 text-white flex items-end">

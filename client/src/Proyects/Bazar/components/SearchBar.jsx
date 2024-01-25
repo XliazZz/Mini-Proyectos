@@ -18,7 +18,7 @@ const SearchBar = ({ name }) => {
       dispatch(fetchSearchs(searchTerm));
       setSearchTerm('');
       localStorage.setItem('searchTerm', searchTerm);
-      navigate('/bazar/searchs')
+      navigate('/proyects/bazar/searchs')
     }
   };
 

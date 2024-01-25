@@ -13,9 +13,9 @@ const Results = () => {
   const uniqueCategories = [...new Set(allTheCategories)];
 
   return (
-    <div className="justify-center sm:mb-10">
+    <div className="justify-center sm:pb-10 sm:h-screen">
       
-      <div className="my-1 sm:mt-3">
+      <div className="my-1 sm:pt-3">
         <SearchBar name={searchName}/>
       </div>
 

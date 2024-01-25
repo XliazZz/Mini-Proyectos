@@ -7,7 +7,7 @@ const Card = ({ title, description, price, image, rating, id }) => {
   const emptyStars = 5 - fullStars - (halfStar ? 1 : 0);
 
   return (
-    <NavLink to={`/bazar/detail/${id}`} className="flex rounded-sm bg-zinc-950 content-center justify-center w-screen h-44 p-3 max-h-44 sm:w-96 sm:rounded-lg">
+    <NavLink to={`/proyects/bazar/detail/${id}`} className="flex rounded-sm bg-zinc-950 content-center justify-center w-screen h-44 p-3 max-h-44 sm:w-96 sm:rounded-lg">
 
       <div className="flex items-center">
         <img className=" h-20 w-20 rounded-full ml-0 mx-3 sm:rounded-sm sm:w-40 sm:h-24" src={image} alt={`Imagen de ${title}`} />
