@@ -1,19 +1,24 @@
-import './App.css'
-import { Routes, Route } from 'react-router-dom'
+import './App.css';
+import { Routes, Route, useLocation } from 'react-router-dom';
 
-import Proyects from './views/Proyects'
-import Landing from './views/Landing'
+import Proyects from './views/Proyects';
+import Landing from './views/Landing';
+import Footer from './components/Footer';
 
-import Library from './Proyects/Library/Library'
+import Library from './Proyects/Library/Library';
 
-import Grids from './Proyects/Grids/Grids'
+import Grids from './Proyects/Grids/Grids';
 
-import Bazar from './Proyects/Bazar/Bazar'
-import Results from './Proyects/Bazar/views/Results'
-import Detail from './Proyects/Bazar/views/Detail'
+import Bazar from './Proyects/Bazar/Bazar';
+import Results from './Proyects/Bazar/views/Results';
+import Detail from './Proyects/Bazar/views/Detail';
 
-import TicTacToe from './Proyects/TicTacToe/TicTacToe'
+import TicTacToe from './Proyects/TicTacToe/TicTacToe';
+
+import MemoryGame from './Proyects/MemoryGame/MemoryGame';
+
 function App() {
+  const { pathname } = useLocation()
 
   return (
     <main>
@@ -30,7 +35,11 @@ function App() {
         <Route path='proyects/bazar/detail/:id' element={<Detail />}/>
 
         <Route path='proyects/tictactoe' element={<TicTacToe />}/>
+
+        <Route path='proyects/memorygame' element={<MemoryGame />}/>
       </Routes>
+
+      {pathname !== '/' && <Footer />}
     </main>
   )
 }

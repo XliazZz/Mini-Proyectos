@@ -4,8 +4,8 @@ const Tile = ({ value, index, callback }) => {
   return (
     <motion.div
       onClick={() => callback(index)}
-      className={`w-22 h-20 bg-indigo-300 flex justify-center items-center text-7xl rounded-sm font-black ${
-        value === 'X' ? 'text-white' : 'text-black'
+      className={`w-22 h-20 bg-indigo-100 flex justify-center items-center  text-7xl rounded-sm font-black ${
+        value === 'X' ? 'text-red-500' : 'text-blue-500'
       }`}
       whileTap={{ scale: 0.9 }}
       variants={{

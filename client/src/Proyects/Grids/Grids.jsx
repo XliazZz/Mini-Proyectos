@@ -2,7 +2,7 @@ const Grids = () => {
   return (
     <div>
 
-      <div className="bg-red-200  justify-center">
+      <div className="bg-red-200  justify-center p-16">
         <div className="grid grid-cols-4 grid-rows-5 text-center">
           <div className="bg-blue-400 col-span-4 row-span-3 p-5 m-3">1</div>
           <div className="bg-blue-400 col-span-4 row-span-1 p-5 m-3">2</div>

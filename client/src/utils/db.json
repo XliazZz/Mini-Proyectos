@@ -3,28 +3,35 @@
     "name": "Libreria",
     "image": "https://res.cloudinary.com/do5ubt5g0/image/upload/v1705624334/Captura_desde_2024-01-18_21-31-29_ngalbp.png",
     "description": "Libreria Personal: Organiza tus lecturas fácilmente. Agrega libros a tu lista de lectura, filtra por géneros y guarda tu lista de manera segura en LocalStorage. 📚✨",
-    "path": "/library",
+    "path": "library",
     "id": 1
   },
   {
     "name": "Bazar",
     "image": "https://res.cloudinary.com/do5ubt5g0/image/upload/v1706036905/Captura_desde_2024-01-23_16-08-08_ujbr1c.png",
     "description": "Bazar: Busca por nombre y ve los detalles de los productos desde el celular o la computadora. 🛒",
-    "path": "/bazar",
+    "path": "bazar",
     "id": 2
   },
   {
     "name": "Grids",
     "image": "https://cdn.images.fecom-media.com/FE00002114/images/B8R01922_H47968-PHE-CHE-I50_c8IKLcGz7E.jpg?format=webp&width=578&height=578&quality=75%201x&scale=UpscaleCanvas&anchor=MiddleCenter",
     "description": "Grids: Practica de grid, posiciones, etc. 🎨",
-    "path": "/grids",
+    "path": "grids",
     "id": 3
   },
   {
     "name": "Tic Tac Toe",
-    "image": "https://res.cloudinary.com/do5ubt5g0/image/upload/v1706164599/Captura_desde_2024-01-25_03-36-20_jh0kf3.png",
+    "image": "https://res.cloudinary.com/do5ubt5g0/image/upload/v1706201834/Captura_desde_2024-01-25_13-57-02_rp0br6.png",
     "description": "Tic Tac Toe: Juega contra la maquina. 🎮",
     "path": "tictactoe",
     "id": 4
+  },
+  {
+    "name": "Juego de Memoria",
+    "image": "https://res.cloudinary.com/do5ubt5g0/image/upload/v1707021341/Captura_desde_2024-02-04_01-35-17_znqe2v.png",
+    "description": "Juego de Memoria: Encuentra las parejas. 🎮",
+    "path": "memorygame",
+    "id": 5
   }
 ]

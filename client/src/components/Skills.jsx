@@ -23,18 +23,10 @@ const Skills = ({ hasScrolled }) => {
     NodeJS: nodejs,
     React: react,
     Express: express,
-    MongoDB: mongodb,
-    PostgreSQL: postgresql,
     Redux: redux,
-    JWT: jwt,
-    OAuth: oauth,
     Tailwind: tailwind,
-    Git: git,
-    GitHub: github,
-    Bootstrap: bootstrap,
     HTML5: html5,
     CSS3: css3,
-    "Amazon RDS": aws
   };
 
   return (

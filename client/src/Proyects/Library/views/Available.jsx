@@ -37,7 +37,7 @@ const Available = () => {
   return (
     <div>
       <section className="flex">
-        <div className="w-full justify-start mr-5 content-start items-start">
+        <div className="w-full justify-start mr-5 content-start items-start p-10">
           <Filter />
         </div>
       </section>

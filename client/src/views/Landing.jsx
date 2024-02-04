@@ -31,7 +31,7 @@ const Landing = () => {
         </div>
 
         <NavLink to={'/proyects'}>
-          <div className='text-center p-2 rounded-xl bg-indigo-600 cursor-pointer hover:bg-gradient-to-r hover:from-indigo-600 hover:to-blue-700'>
+          <div className='text-center p-4 mt-24 rounded-xl bg-indigo-600 cursor-pointer hover:bg-gradient-to-r hover:from-indigo-600 hover:to-blue-700'>
             <button >Explorar</button>
           </div>
         </NavLink>
