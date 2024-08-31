@@ -5,7 +5,7 @@ const Proyects = () => {
   return (
     <div className="bg-gradient-to-br from-blue-400 to-indigo-900 min-h-screen overflow-auto pb-10">
       <div
-        className="grid grid-cols-2 gap-2 m-0 p-10 gap-y-10 z-50"
+        className="grid grid-cols-3 gap-1 m-0 p-10 gap-y-10 z-50"
       >
         {data.map((proyect) => (
           <Card
