@@ -4,7 +4,7 @@ import Board from './components/Board';
 const Keyboard = () => {
 
   return (
-    <div className='bg-slate-900'>
+    <div className='bg-slate-900 p-5'>
 
       <Board/>
     </div>

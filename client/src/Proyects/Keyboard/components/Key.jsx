@@ -1,8 +1,4 @@
 import React from 'react';
-import arrowUp from '../../../assets/keyboard/arrow-up-svgrepo-com.svg';
-import arrowDown from '../../../assets/keyboard/arrow-down-svgrepo-com.svg';
-import arrowLeft from '../../../assets/keyboard/arrow-left-svgrepo-com.svg';
-import arrowRight from '../../../assets/keyboard/arrow-right-svgrepo-com.svg';
 import windowsIcon from '../../../assets/keyboard/windows-10_icon-icons.com_66166.svg' 
 import clickRight from '../../../assets/keyboard/text_indent_right_icon_159814.svg';
 import deleteIcon from '../../../assets/keyboard/delete.svg';
@@ -31,14 +27,6 @@ const getColSpan = (lyric) => {
 
 const getArrowImage = (lyric) => {
   switch (lyric) {
-    case 'arrow up':
-      return arrowUp;
-    case 'arrow down':
-      return arrowDown;
-    case 'arrow left':
-      return arrowLeft;
-    case 'arrow right':
-      return arrowRight;
     case 'Windows':
       return windowsIcon;
     case 'clickRight':
@@ -51,7 +39,6 @@ const getArrowImage = (lyric) => {
       return null;
   }
 };
-
 
 const Key = ({ lyric, onClick }) => {
   const colSpanClass = getColSpan(lyric);
