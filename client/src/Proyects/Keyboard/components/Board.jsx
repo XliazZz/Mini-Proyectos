@@ -6,6 +6,7 @@ import Text from './Text';
 const Board = () => {
   const [clickedLyrics, setClickedLyrics] = React.useState('');
   const [cursorPosition, setCursorPosition] = React.useState(0);
+  const [mayusPressed, setMayusPressed] = React.useState(false);
   const textAreaRef = React.useRef(null);
 
   const handleClick = (lyric) => {
@@ -30,11 +31,21 @@ const Board = () => {
       setCursorPosition(cursorPosition < clickedLyrics.length ? cursorPosition + 1 : clickedLyrics.length);
     }
 
-    else {
-      setClickedLyrics((prevLyrics) => prevLyrics.slice(0, cursorPosition) + lyric + prevLyrics.slice(cursorPosition));
-      setCursorPosition(cursorPosition + lyric.length);
+   else if (lyric === 'Mayús') {
+    setMayusPressed(!mayusPressed);
+  } else {
+    let newLyric = lyric;
+    if (mayusPressed) {
+      const specialChar = lyric.split(' ')[1];
+      newLyric = specialChar ? specialChar : lyric.toUpperCase();
+      setMayusPressed(false);
+    } else {
+      newLyric = lyric.split(' ')[0];
     }
-  };
+    setClickedLyrics((prevLyrics) => prevLyrics.slice(0, cursorPosition) + newLyric + prevLyrics.slice(cursorPosition));
+    setCursorPosition(cursorPosition + newLyric.length);
+  }
+};
 
   React.useEffect(() => {
     if (textAreaRef.current) {
@@ -48,14 +59,24 @@ const Board = () => {
   };
   
   return (
-    <div>
+    <div className='container  m-auto'>
+      <header className='content-center flex text-center justify-center'>
+        <h1 className='text-6xl mb-10 font-bold'>Keyboard Digital</h1>
+      </header>
       <Text some={clickedLyrics} textAreaRef={textAreaRef} onChange={handleInputChange}/>
       <div className='flex justify-center'>
-        <div className='grid grid-cols-16 gap-1 grid-rows-5'>
-          {lyrics.map((lyric) => (
-            <Key lyric={lyric} key={lyric} onClick={() => handleClick(lyric)}/>
+      <div className='my-10 w-[86%]'>
+      {lyrics.map((row, rowIndex) => (
+        <div key={rowIndex} className='bg-black flex mb-2 '>
+          {row.map((lyric) => (
+              <Key lyric={lyric} key={lyric} 
+                onClick={() => handleClick(lyric)}
+                mayusPressed={mayusPressed}               
+              />
           ))}
         </div>
+      ))}
+    </div>
       </div>
     </div>
   );
