@@ -1,7 +1,6 @@
 import React from 'react';
 
 const Text = ({ some, textAreaRef, onChange, onClick }) => {
-
   return (
     <div className='container flex justify-center p-0 w-full'>
       <div className='
@@ -23,7 +22,6 @@ const Text = ({ some, textAreaRef, onChange, onClick }) => {
           autoComplete='off'
         />
       </div>
-      
     </div>
   );
 }

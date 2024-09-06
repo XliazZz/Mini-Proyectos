@@ -1,58 +1,7 @@
 import React from 'react';
+import { getStyle } from '../logic/logic';
 
 const Key = ({ lyric, onClick, mayusPressed, blockPressed, ctrlPressed }) => {
-  const getStyle = (lyric) => {
-    switch (lyric) {
-      case 'Tab':
-      case '| ?':
-        return `
-        lg:w-[70%] lg:text-left 
-        xs:text-center
-        sm:text-left
-        `;
-      case 'Block':
-      case 'Enter':
-        return `
-        lg:w-[80%] lg:text-left 
-        xs:text-center
-        sm:w-{}
-        `;
-      case 'Delete':
-        return `
-        lg:w-[78%] lg:text-left 
-        xs:text-center
-        `;
-      case 'Mayús':
-      case 'Mayús ':
-        return `
-        lg:w-[90%]  lg:text-left 
-        xs:text-center`;
-      case 'Windows':
-      case 'AltGr':
-      case 'Alt':
-      case 'Options':
-        return `
-        lg:w-[20%] lg:text-left lg:h-12 lg:text-transparent
-        xs:h-[20px] xs:w-[50%] xs:text-center xs:text-transparent 
-        `;
-      case 'Ctrl':
-      case 'Fn':
-      case 'Ctrl ':
-        return `
-        lg:w-[20%] lg:text-left lg:h-12 
-        xs:h-[20px] xs:text-center
-        `;
-      case 'Space':
-        return 'lg:w-[100%] xs:w-[100%] lg:justify-center md:justify-center';
-      default:
-        return `
-        lg:w-[38%] lg:h-14 lg:text-left flex uppercase 
-        xs:h-[20px] xs:w-[12em] xs:text-center
-        sm:w-[50%]
-        `;
-    }
-  };
-
   const styles = getStyle(lyric);
 
   return (
@@ -90,4 +39,4 @@ const Key = ({ lyric, onClick, mayusPressed, blockPressed, ctrlPressed }) => {
   );
 };
 
-// export default Key;
+export default Key;
