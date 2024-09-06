@@ -35,6 +35,12 @@ export default {
         '17': '17',
         '18': '18',
       },
+      fontFamily: {
+        Outfit: ['Outfit', 'sans-serif'],
+      },
+      screens: {
+        'xs': '480px'
+      }
     },
   },
   plugins: [],

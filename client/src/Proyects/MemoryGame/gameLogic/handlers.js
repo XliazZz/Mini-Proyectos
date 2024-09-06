@@ -1,5 +1,3 @@
-import { useEffect } from 'react';
-
 export const useGameHandlers = (state) => {
   const handleDifficultyChange = (newDifficulty) => {
     state.setDifficulty(newDifficulty);

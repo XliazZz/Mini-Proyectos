@@ -2,10 +2,8 @@ import React from 'react'
 import Board from './components/Board';
 
 const Keyboard = () => {
-
   return (
-    <div className='bg-slate-900 p-5 h-screen flex '>
-
+    <div className='bg-neutral-800 p-5 h-screen flex '>
       <Board/>
     </div>
   )
