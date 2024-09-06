@@ -33,5 +33,13 @@
     "description": "Juego de Memoria: Encuentra las parejas. 🎮",
     "path": "memorygame",
     "id": 5
+  },
+  
+  {
+    "name": "Keyboard Digital",
+    "image": "https://res.cloudinary.com/do5ubt5g0/image/upload/v1725656522/Captura_de_pantalla_1_accodz.png",
+    "description": "Un teclado virtual en pantalla. ⌨️",
+    "path": "keyboard",
+    "id": 6
   }
 ]
